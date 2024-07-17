@@ -1,0 +1,1050 @@
+html,
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.navegacao-fase {
+  border-bottom: 1px solid silver;
+  color: #111;
+  display: flex;
+  font-family: opensans;
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 2.4375em;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.classificacao__mata-mata .mata-mata__secao--linha-pos {
+  background-color: #ddd;
+  height: 1px;
+  position: absolute;
+  right: -100vw;
+  top: 50%;
+  width: 100vw;
+}
+
+.navegacao-fase__setas {
+  color: #ccc;
+  flex-grow: 1;
+  text-align: left;
+  font-size: 1.4em;
+  fill: #ccc;
+  align-self: center;
+}
+
+.navegacao-fase__setas:last-of-type {
+  text-align: right;
+}
+.navegacao-fase__setas-ativa {
+  cursor: pointer;
+}
+.navegacao-fase__setas {
+  color: #ccc;
+  flex-grow: 1;
+  text-align: left;
+  font-size: 1.4em;
+  fill: #ccc;
+  align-self: center;
+}
+.theme-color-primary {
+  color: #06aa48;
+  fill: currentColor;
+}
+
+.navegacao-fase__setas svg {
+  height: 0.7em;
+  stroke-width: 10px;
+}
+
+.navegacao-fase__setas {
+  color: #ccc;
+  flex-grow: 1;
+  text-align: left;
+  font-size: 1.4em;
+  fill: #ccc;
+  align-self: center;
+}
+
+.navegacao-fase__seta-esquerda svg {
+  transform: rotate(180deg);
+}
+.navegacao-fase__setas svg {
+  height: 0.7em;
+  stroke-width: 10px;
+}
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+.classificacao__mata-mata {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.classificacao__header--titulo {
+  color: #111;
+  font-family: opensans;
+  font-size: 1.625em;
+  font-weight: bold;
+  letter-spacing: -0.04em;
+  line-height: 1.75em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.theme a {
+  color: #06aa48;
+}
+.tabela {
+  font-size: 16px;
+}
+.tabela * {
+  vertical-align: middle;
+}
+.jogo__transmissao--link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  padding: 12px;
+}
+a {
+  text-decoration: none;
+}
+
+.classificacao__mata-mata .mata-mata__chave {
+  border-radius: 3px;
+  border: 1px solid silver;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.classificacao__mata-mata .mata-mata__chave .jogo {
+  flex-grow: 1;
+  max-width: 47%;
+}
+
+.classificacao__mata-mata .mata-mata__secao {
+  position: relative;
+}
+
+.classificacao__mata-mata .mata-mata__secao--conector {
+  border: 1px solid #ddd;
+  border-left: none;
+  height: 51.9%;
+  left: 100%;
+  position: absolute;
+  right: -2%;
+  top: 24.1%;
+}
+.classificacao__mata-mata .mata-mata__secao--linha-pos {
+  background-color: #ddd;
+  height: 1px;
+  position: absolute;
+  right: -100vw;
+  top: 50%;
+  width: 100vw;
+}
+
+.classificacao__mata-mata .mata-mata__secao--linha-ant {
+  background-color: #ddd;
+  height: 1px;
+  left: -50%;
+  position: absolute;
+  top: 49.6%;
+  width: 50%;
+}
+
+.classificacao__mata-mata .mata-mata__chave .jogo__informacoes {
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.jogo__informacoes--data::after {
+  content: "•";
+  padding: 4px;
+}
+
+.tabela * {
+  vertical-align: middle;
+}
+
+.jogo__transmissao--broadcast {
+  padding: 1px 6px;
+  margin: 0 auto;
+  border-radius: 4px;
+  text-align: center;
+  font-family: opensans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: -0.144px;
+  text-transform: uppercase;
+}
+
+.jogo__informacoes {
+  color: #333;
+  font-family: opensans;
+  font-size: 0.75em;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  line-height: 17px;
+}
+
+.jogo {
+  height: 109px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.jogo__informacoes--local {
+  font-family: opensans;
+  font-weight: normal;
+  margin-right: 16px;
+}
+
+.placar {
+  align-items: center;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  margin: 12px 0 8px;
+  max-height: 30px;
+}
+
+.placar__equipes--mandante {
+  text-align: right;
+  justify-content: flex-end;
+}
+
+.placar__equipes {
+  align-items: center;
+  color: #333;
+  display: flex;
+  flex-grow: 1;
+  font-family: opensans;
+  font-size: 1em;
+  font-stretch: 100%;
+  font-style: normal;
+  font-weight: 100;
+  height: 40px;
+  line-height: 1em;
+  vertical-align: middle;
+  width: 35%;
+}
+
+.placar-box {
+  align-items: center;
+  color: #111;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  padding: 0 12px;
+  min-width: 75px;
+}
+
+.placar-box__valor {
+  font-size: 1.3125em;
+  font-family: opensans;
+  font-style: normal;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+.placar__equipes--visitante {
+  text-align: left;
+  justify-content: flex-start;
+}
+.placar__equipes {
+  align-items: center;
+  color: #333;
+  display: flex;
+  flex-grow: 1;
+  font-family: opensans;
+  font-size: 1em;
+  font-stretch: 100%;
+  font-style: normal;
+  font-weight: 100;
+  height: 40px;
+  line-height: 1em;
+  vertical-align: middle;
+  width: 35%;
+}
+
+.classificacao__mata-mata .separador--nome {
+  background-color: #fcfcfc;
+  border-radius: 9px;
+  border: 1px solid #ddd;
+  color: #999;
+  display: inline-block;
+  font-family: opensans;
+  font-size: 11px;
+  line-height: 18px;
+  margin-left: -50%;
+  padding: 0 14px;
+  text-transform: lowercase;
+  white-space: nowrap;
+}
+
+.classificacao__mata-mata
+  .mata-mata__chave.chave__jogos--2
+  .separador--centralizador {
+  top: 43%;
+}
+
+.classificacao__mata-mata .separador--centralizador {
+  left: 50%;
+  position: absolute;
+}
+
+.placar-box__valor {
+  font-size: 1.3125em;
+  font-family: opensans;
+  font-style: normal;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+.placar-box__penaltis-mandante {
+  margin-left: 4px;
+}
+
+.placar-box__penaltis {
+  font-size: 0.7em;
+}
+
+.placar-box__penaltis-visitante {
+  margin-right: 4px;
+}
+
+.classificacao__mata-mata .mata-mata__chave.chave__jogos--2 .separador {
+  background-color: #ddd;
+  width: 1px;
+}
+
+.placar-box__versus {
+  display: flex;
+  height: 8px;
+  margin: 0 4px;
+  overflow: hidden;
+  vertical-align: middle;
+  width: 9px;
+}
+
+/* Artilharia */
+.artilharia-wrapper {
+  -webkit-font-smoothing: antialiased;
+  font-family: "opensans", arial, sans-serif;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.artilharia-wrapper .artilharia-header-titulo {
+  margin-bottom: 19px;
+}
+
+cf {
+  font-size: 24px;
+  font-family: opensans, "Helvetica Neue", Arial, sans-serif;
+  font-weight: bold;
+  color: #333;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 38.8125em) {
+  #widget-classificacao .tabela-times-head,
+  .artilharia-wrapper .ranking-header {
+    letter-spacing: -0.3px;
+  }
+}
+
+#widget-classificacao .tabela-times-head,
+.artilharia-wrapper .ranking-header {
+  line-height: 10px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.ranking-header {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  border-width: 1px 0;
+  border-style: solid;
+  border-color: #ddd;
+  color: #999;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.ranking-headerGols {
+  margin-left: auto;
+  padding-right: 20px;
+}
+
+.artilharia-wrapper .ranking-content {
+  box-sizing: content-box;
+  overflow: auto;
+  height: 430px;
+  border-bottom: 1px solid #ddd;
+}
+
+.artilharia-wrapper .ranking-item-wrapper {
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+}
+
+.artilharia-wrapper .ranking-item {
+  width: 30px;
+  color: #999;
+  font-family: opensans, arial, sans-serif;
+  font-size: 28px;
+}
+
+.jogador {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 78px;
+}
+
+.artilharia-wrapper .jogador .jogador-foto img {
+  display: block;
+}
+
+.classificacao__mata-mata .mata-mata__chave .jogo .equipes__nome {
+  display: block;
+}
+
+.classificacao__mata-mata .mata-mata__chave .jogo .equipes__sigla {
+  display: none;
+}
+
+.artilharia-wrapper .jogador .jogador-foto {
+  border-radius: 50px;
+  background-color: #f1f1f1;
+  display: block;
+  height: 50px;
+  margin-right: 10px;
+  overflow: hidden;
+  text-indent: -999px;
+  width: 50px;
+}
+
+.jogador-info {
+  margin-left: 20px;
+}
+
+.jogador-gols {
+  margin-left: auto;
+  padding-right: 20px;
+  color: #333;
+  font-family: "opensans-bold", arial, sans-serif;
+  font-size: 26px;
+}
+
+/* Fase de grupos */
+
+#classificacao__wrapper {
+  align-items: flex-start;
+  animation: fadeInFromNone 0.125s linear;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: space-between;
+  margin-top: 41px;
+  opacity: 1 !important;
+}
+
+#classificacao__wrapper {
+  opacity: 0;
+}
+
+.navegacao-fase + .tabela__futebol:first-of-type {
+  margin-top: 20px;
+}
+
+.tabela__futebol--listinhas {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tabela__futebol {
+  margin-bottom: 20px;
+}
+
+.tabela__futebol,
+.tabela__basquete {
+  width: 65%;
+}
+
+.tabela__futebol--listinhas header {
+  flex-basis: 100%;
+}
+
+.classificacao__header--titulo {
+  color: #111;
+  font-family: opensans;
+  font-size: 1.625em;
+  font-weight: bold;
+  letter-spacing: -0.04em;
+  line-height: 1.75em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.tabela__futebol--listinhas .tabela {
+  flex-grow: 2;
+  flex-basis: 60%;
+  width: 60%;
+}
+
+.classificacao__pontos-corridos {
+  display: flex;
+}
+
+.tabela__equipes {
+  background-color: #fcfcfc;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+  font-size: 17px;
+  min-width: 100px;
+  width: 250px;
+}
+
+.tabela__col--posicao {
+  width: 25px;
+}
+
+.tabela__col--variacao {
+  width: 38px;
+}
+
+@media screen and (max-width: 1356px) {
+  .tabela__head {
+    border-right: 1px solid #999;
+  }
+}
+.tabela__head {
+  border-bottom: 1px solid #c0c0c0;
+  border-right: 0 solid #999;
+  border-top: 1px solid #ddd;
+  color: #999;
+  font-family: opensans;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 300;
+  height: 40px;
+  line-height: 10px;
+  text-transform: uppercase;
+}
+
+.tabela__head--coluna {
+  padding: 0 21px;
+  white-space: nowrap;
+  line-height: 10px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+  font-size: 11px;
+}
+.tabela__head--classificacao {
+  text-align: left;
+  padding: 0 !important;
+  flex-grow: 2;
+  flex-basis: 50%;
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 1356px) {
+  .classificacao__tabela--linha {
+    border-right: 1px solid #999;
+  }
+}
+.classificacao__tabela--linha {
+  text-align: center;
+  border-right: 0px solid #999;
+  border-bottom: solid 1px #ddd;
+  height: 55px;
+}
+
+.tabela * {
+  vertical-align: middle;
+}
+
+.classificacao__equipes--posicao {
+  color: #999;
+  text-align: left;
+  letter-spacing: -2px;
+  line-height: 22px;
+}
+
+.classificacao__equipes--sigla {
+  display: none;
+}
+
+.classificacao__equipes--nome {
+  display: block;
+  overflow: hidden;
+  word-break: inherit;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.classificacao__equipes {
+  letter-spacing: -1px;
+  font-family: opensans;
+  font-variant: normal;
+  font-weight: normal;
+}
+
+.classificacao__equipes--variacao {
+  color: #bebebe;
+  font-size: 11px;
+  padding: 3px 0 0 8px;
+  text-align: start;
+}
+
+.classificacao__equipes--time {
+  text-align: left;
+  vertical-align: middle;
+  line-height: 22px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.tabela__pontos {
+  font-size: 14px;
+  width: calc(100% - 250px);
+  border-collapse: collapse;
+  border-spacing: 0;
+  display: block;
+  overflow-x: overlay;
+}
+
+.tabela__pontos .tabela__head,
+.tabela__pontos .classificacao__tabela--linha {
+  border-right: none;
+}
+
+@media screen and (max-width: 1356px) {
+  .tabela__head {
+    border-right: 1px solid #999;
+  }
+}
+
+.tabela__head {
+  border-bottom: 1px solid #c0c0c0;
+  border-right: 0 solid #999;
+  border-top: 1px solid #ddd;
+  color: #999;
+  font-family: opensans;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 300;
+  height: 40px;
+  line-height: 10px;
+  text-transform: uppercase;
+}
+
+.tabela__head--coluna {
+  padding: 0 21px;
+  white-space: nowrap;
+  line-height: 10px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+  font-size: 11px;
+}
+
+.tabela__listinhas {
+  border-left: 1px solid #ccc;
+  flex-grow: 1;
+  width: 30%;
+  flex-basis: 30%;
+}
+
+.tabela__lista-jogos {
+  flex-grow: 1;
+  order: 2;
+  width: 30%;
+}
+
+.lista-jogos__header--titulo-listinha {
+  display: none;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.lista-jogos__header--titulo {
+  color: #111;
+  font-family: opensans;
+  font-size: 1.625em;
+  font-weight: bold;
+  letter-spacing: -0.04em;
+  line-height: 1.75em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.lista-jogos__navegacao {
+  border-bottom: 1px solid silver;
+  border-top: 1px solid #ddd;
+  color: #111;
+  display: flex;
+  font-family: opensans;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 2.4375em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.lista-jogos__navegacao--setas-ativa {
+  cursor: pointer;
+}
+
+.lista-jogos__navegacao--setas {
+  color: #ccc;
+  flex-grow: 1;
+  text-align: left;
+  font-size: 1.5em;
+  height: 1.5em;
+  fill: #ccc;
+}
+
+.lista-jogos__navegacao--rodada {
+  flex-grow: 2;
+}
+
+.lista-jogos__navegacao--setas:last-of-type {
+  text-align: right;
+}
+
+.lista-jogos__navegacao--setas:last-of-type {
+  text-align: right;
+}
+
+.lista-jogos__navegacao--setas {
+  color: #ccc;
+  flex-grow: 1;
+  text-align: left;
+  font-size: 1.5em;
+  height: 1.5em;
+  fill: #ccc;
+}
+
+.lista-jogos__navegacao--seta-esquerda svg {
+  transform: rotate(180deg);
+}
+
+.lista-jogos__navegacao--setas svg {
+  height: 0.7em;
+  stroke-width: 10px;
+}
+
+.lista-jogos {
+  font-size: 16px;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  padding: 0;
+  height: 90%;
+}
+
+.lista-jogos__jogo {
+  border-bottom: 1px solid #e3e3e3;
+  display: block;
+}
+
+.navegacao-fase + .tabela__futebol:first-of-type {
+  margin-top: 20px;
+}
+.tabela__futebol--listinhas {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.tabela__futebol {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .lista-jogos .equipes__sigla {
+    display: block;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .lista-jogos .equipes__nome {
+    display: none;
+  }
+}
+
+.classificacao__pontos {
+  background-color: #fcfcfc;
+  line-height: 14px;
+  font-family: opensans;
+}
+
+.classificacao__ultimos_jogos--v {
+  background-color: #51a81e;
+}
+
+.classificacao__ultimos_jogos--e,
+.classificacao__ultimos_jogos--neutra {
+  background-color: #ccc;
+}
+
+.classificacao__ultimos_jogos--d {
+  background-color: #f00;
+}
+
+.classificacao__ultimos_jogos {
+  border-radius: 50%;
+  display: inline-block;
+  height: 7px;
+  margin-left: 4px;
+  overflow: hidden;
+  width: 7px;
+}
+
+.classificacao__pontos:nth-child(odd) {
+  background-color: #f5f5f5;
+}
+
+.classificacao__pontos--ponto {
+  font-weight: 700;
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .lista-jogos .equipes__sigla {
+    display: block;
+  }
+}
+
+.equipes__escudo--mandante {
+  margin-left: 8px;
+}
+
+.equipes__escudo--visitante {
+  margin-right: 8px;
+}
+
+.equipes__escudo {
+  height: 30px;
+  width: 30px;
+}
+
+.faixa-classificacao {
+  margin: 8px 0 36px;
+  flex-grow: 3;
+  order: 3;
+  flex-basis: 100%;
+  color: #999;
+  font-size: 11px;
+  font-family: opensans;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.faixa-classificacao__agrupador {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.faixa-classificacao__grupo {
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.faixa-classificacao__label {
+  line-height: 18px;
+  margin-right: 20px;
+  text-transform: lowercase;
+}
+
+.faixa-classificacao .classificacao__icone {
+  margin-left: 0;
+}
+
+.faixa-classificacao__label--icone {
+  height: 9px;
+  margin-left: 0;
+  margin-right: 1px;
+  width: 9px;
+}
+
+.classificacao__icone {
+  background-size: 17px 50px;
+  background: url(https://s.glbimg.com/es/ge/static/live/widget_classificacao_responsivo/img/sprite-tabela-icones.svg?5dfb76dc3509)
+    no-repeat left 1px;
+  display: inline-block;
+  height: 10px;
+  background-position-y: 2px;
+  margin-left: 6px;
+  overflow: hidden;
+  width: 8px;
+}
+
+.classificacao__icone--negativa {
+  background-position: right 2px;
+}
+
+.classificacao__icone--neutra {
+  background-image: none;
+  background-color: #ccc;
+  height: 7px;
+  width: 7px;
+}
+
+.regulamento {
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.regulamento__ver-regulamento {
+  cursor: pointer;
+  transition: color 0.35s;
+  white-space: nowrap;
+  font-family: opensans;
+  line-height: 18px;
+}
+
+.regulamento * {
+  box-sizing: inherit;
+}
+
+.faixa-classificacao__disclaimer {
+  flex-basis: 100%;
+  font-family: opensans;
+  font-style: italic;
+  margin-top: 12px;
+}
+
+@media screen and (max-width: 1000px) {
+  #classificacao__wrapper {
+    margin-top: 5px;
+    flex-direction: column;
+  }
+
+  .classificacao__mata-mata .mata-mata__chave .jogo .equipes__sigla {
+    display: block;
+  }
+
+  .classificacao__mata-mata .mata-mata__chave .jogo .equipes__nome {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+ 
+  .classificacao__mata-mata .mata-mata__chave.chave__jogos--2 .jogo {
+    height: 121px;
+  }
+
+  .mata-mata__chave .placar-box {
+    min-width: 100px;
+  }
+
+  .classificacao__mata-mata
+    .mata-mata__chave.chave__jogos--2
+    .jogo__transmissao--broadcast {
+    margin: 4px auto;
+  }
+
+  .mata-mata__chave .placar-box {
+    min-width: 100px;
+  }
+
+  .classificacao__mata-mata
+    .mata-mata__chave.chave__jogos--2
+    .jogo__informacoes {
+    display: flex;
+  }
+
+  .classificacao__mata-mata
+    .mata-mata__chave.chave__jogos--2
+    .jogo__informacoes--local {
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .classificacao__mata-mata .mata-mata__chave.chave__jogos--2 .separador {
+    height: 1px;
+    left: 0;
+    position: relative;
+    width: 100%;
+  }
+
+  .classificacao__mata-mata .mata-mata__chave .jogo {
+    max-width: 100%;
+  }
+
+  .classificacao__mata-mata .mata-mata__chave {
+    flex-direction: column;
+    width: 98%;
+  }
+
+  .classificacao__mata-mata
+    .mata-mata__chave.chave__jogos--2
+    .separador--centralizador {
+    margin-top: -15px;
+    top: 0;
+  }
+
+  #classificacao__wrapper {
+    padding-top: 16px;
+  }
+
+  .navegacao-fase {
+    font-size: 0.875em;
+    line-height: 3em;
+  }
+
+  .classificacao__mata-mata .mata-mata__chave .jogo {
+    max-width: 100%;
+  }
+
+  .classificacao__mata-mata
+    .mata-mata__chave.chave__jogos--2
+    .jogo__transmissao--broadcast {
+    margin: 4px auto;
+  }
+}
+
+@media screen and (max-width: 449px) {
+  .classificacao__mata-mata .mata-mata__secao--conector {
+    left: 98%;
+    right: -1%;
+  }
+}
