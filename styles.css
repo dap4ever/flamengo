@@ -5,6 +5,23 @@ body {
   padding: 0;
 }
 
+.tabela__lista-jogos {
+  overflow: hidden;
+  position: relative;
+}
+
+.lista-jogos {
+  transition: transform 0.5s ease-in-out;
+  white-space: nowrap;
+}
+
+.lista-jogos__jogo {
+  display: inline-block;
+  width: 100%; /* Ajuste conforme necessário */
+  white-space: normal;
+}
+
+
 .navegacao-fase {
   border-bottom: 1px solid silver;
   color: #111;
@@ -107,15 +124,7 @@ body {
 .tabela * {
   vertical-align: middle;
 }
-.jogo__transmissao--link {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-  padding: 12px;
-}
+
 a {
   text-decoration: none;
 }
@@ -301,6 +310,12 @@ a {
 }
 
 .classificacao__mata-mata
+  .mata-mata__chave.chave__jogos--1
+  .separador--centralizador {
+  top: -10%;
+}
+
+.classificacao__mata-mata
   .mata-mata__chave.chave__jogos--2
   .separador--centralizador {
   top: 43%;
@@ -309,6 +324,12 @@ a {
 .classificacao__mata-mata .separador--centralizador {
   left: 50%;
   position: absolute;
+}
+
+.classificacao__mata-mata .mata-mata__chave .jogo.confronto .confronto__item {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 100%;
 }
 
 .placar-box__valor {
@@ -343,6 +364,16 @@ a {
   overflow: hidden;
   vertical-align: middle;
   width: 9px;
+}
+
+.jogo__transmissao--link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  padding: 12px;
 }
 
 /* Artilharia */
@@ -679,13 +710,6 @@ table {
   font-size: 11px;
 }
 
-.tabela__listinhas {
-  border-left: 1px solid #ccc;
-  flex-grow: 1;
-  width: 30%;
-  flex-basis: 30%;
-}
-
 .tabela__lista-jogos {
   flex-grow: 1;
   order: 2;
@@ -947,9 +971,45 @@ table {
   margin-top: 12px;
 }
 
+.classificacao__mata-mata .mata-mata__chave.chave__jogos--1 .jogo {
+  max-width: 100%;
+}
+
+.navegacao-fase + .tabela__futebol:first-of-type {
+  margin-top: 20px;
+}
+
+.tabela__listinhas {
+  border-left: 1px solid #ccc;
+  flex-grow: 1;
+  width: 30%;
+  flex-basis: 30%;
+}
+
+@media screen and (max-width: 1356px) {
+  .tabela__head {
+    border-right: 1px solid #999;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .tabela__lista-jogos {
+    order: 4;
+    border: none !important;
+    padding-left: 0;
+    margin-left: 0;
+    width: 100%;
+    margin-bottom: 13px;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   #classificacao__wrapper {
     margin-top: 5px;
+    flex-direction: column;
+  }
+
+  .tabela__futebol--listinhas {
     flex-direction: column;
   }
 
@@ -960,10 +1020,18 @@ table {
   .classificacao__mata-mata .mata-mata__chave .jogo .equipes__nome {
     display: none;
   }
+
+  .tabela__listinhas {
+    width: 100%;
+  }
+
+  .tabela__futebol--listinhas .tabela {
+    width: 100%;
+    flex-basis: 100%;
+  }
 }
 
 @media (max-width: 767px) {
- 
   .classificacao__mata-mata .mata-mata__chave.chave__jogos--2 .jogo {
     height: 121px;
   }
@@ -1016,6 +1084,16 @@ table {
   }
 
   .classificacao__mata-mata
+    .mata-mata__chave.chave__jogos--1
+    .separador--centralizador {
+    top: -10%;
+  }
+
+  .classificacao__mata-mata .mata-mata__chave.chave__jogos--1 .jogo {
+    max-width: 100%;
+  }
+
+  .classificacao__mata-mata
     .mata-mata__chave.chave__jogos--2
     .separador--centralizador {
     margin-top: -15px;
@@ -1039,6 +1117,11 @@ table {
     .mata-mata__chave.chave__jogos--2
     .jogo__transmissao--broadcast {
     margin: 4px auto;
+  }
+
+  .lista-jogos__header--titulo-listinha {
+    display: block;
+    font-size: 17px;
   }
 }
 
