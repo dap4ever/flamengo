@@ -823,8 +823,7 @@ table {
   .lista-jogos .equipes__sigla {
     display: block;
   }
-}
-@media (min-width: 1024px) and (max-width: 1439px) {
+
   .lista-jogos .equipes__nome {
     display: none;
   }
@@ -997,6 +996,10 @@ table {
     text-overflow: ellipsis;
     line-height: 24px;
     width: 100%;
+  }
+  
+  .lista-jogos .equipes__sigla {
+    display: none;
   }
 }
 
