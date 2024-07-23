@@ -5,6 +5,17 @@ body {
   padding: 0;
 }
 
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+div {
+  display: block;
+  unicode-bidi: isolate;
+}
+
 .tabela__lista-jogos {
   overflow: hidden;
   position: relative;
@@ -20,7 +31,6 @@ body {
   width: 100%; /* Ajuste conforme necessário */
   white-space: normal;
 }
-
 
 .navegacao-fase {
   border-bottom: 1px solid silver;
@@ -121,9 +131,6 @@ body {
 .tabela {
   font-size: 16px;
 }
-.tabela * {
-  vertical-align: middle;
-}
 
 a {
   text-decoration: none;
@@ -182,10 +189,6 @@ a {
 .jogo__informacoes--data::after {
   content: "•";
   padding: 4px;
-}
-
-.tabela * {
-  vertical-align: middle;
 }
 
 .jogo__transmissao--broadcast {
@@ -312,7 +315,7 @@ a {
 .classificacao__mata-mata
   .mata-mata__chave.chave__jogos--1
   .separador--centralizador {
-  top: -10%;
+  top: -14%;
 }
 
 .classificacao__mata-mata
@@ -986,6 +989,17 @@ table {
   flex-basis: 30%;
 }
 
+@media (min-width: 1440px) {
+  .lista-jogos .equipes__nome {
+    display: block;
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 24px;
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 1356px) {
   .tabela__head {
     border-right: 1px solid #999;
@@ -1064,6 +1078,29 @@ table {
     text-overflow: ellipsis;
     width: 100%;
   }
+
+  .lista-jogos .equipes__sigla {
+    display: block;
+  }
+
+  .lista-jogos .equipes__nome {
+    display: none;
+  }
+
+  .jogo__transmissao--link {
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .lista-jogos .equipes__nome {
+    display: block;
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 24px;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -1076,6 +1113,7 @@ table {
 
   .classificacao__mata-mata .mata-mata__chave .jogo {
     max-width: 100%;
+    min-height: 129px;
   }
 
   .classificacao__mata-mata .mata-mata__chave {
