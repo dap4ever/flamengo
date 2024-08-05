@@ -13,6 +13,16 @@
       crossorigin="anonymous"
     />
     <link href="styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
     <title>Fase de grupos</title>
   </head>
   <body>
@@ -23,10 +33,10 @@
         style="padding-top: 0px"
       >
         <nav class="navegacao-fase" data-fase-total="7">
-          <span
-            class="navegacao-fase__setas navegacao-fase__seta-esquerda navegacao-fase__setas-ativa theme-color-primary"
-          >
-            <a href="terceirafase.html">
+          <a href="terceirafase.html">
+            <span
+              class="navegacao-fase__setas navegacao-fase__seta-esquerda navegacao-fase__setas-ativa theme-color-primary"
+            >
               <svg
                 stroke="#06AA48"
                 xmlns="http://www.w3.org/2000/svg"
@@ -36,8 +46,9 @@
                   d="M40.4 121.3c-.8.8-1.8 1.2-2.9 1.2s-2.1-.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8 0l53.9 53.9c1.6 1.6 1.6 4.2 0 5.8l-53.9 53.9z"
                 ></path>
               </svg>
-            </a> </span
-          ><span class="navegacao-fase__fase">Fase de grupos</span
+            </span>
+          </a>
+          <span class="navegacao-fase__fase">Fase de grupos</span
           ><span
             class="navegacao-fase__setas navegacao-fase__seta-direita navegacao-fase__setas-ativa theme-color-primary"
           >
@@ -405,11 +416,8 @@
                 </svg>
               </span>
             </nav>
-            <ul class="lista-jogos">
-      
-            </ul>
+            <ul class="lista-jogos"></ul>
           </section>
-   
         </article>
         <article
           class="tabela__futebol tabela__futebol--listinhas"
@@ -725,290 +733,365 @@
               </table>
             </div>
           </section>
-          <section class="tabela__lista-jogos tabela__listinhas">
-            <header>
-              <h2
-                class="lista-jogos__header--titulo lista-jogos__header--titulo-listinha"
-              >
-                JOGOS
-              </h2>
-            </header>
-            <nav class="lista-jogos__navegacao">
-              <span
-                class="lista-jogos__navegacao--setas lista-jogos__navegacao--seta-esquerda lista-jogos__navegacao--setas-ativa"
-                ><svg
-                  stroke="#06AA48"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 129 129"
+          <div class="carrossel-tabelinha d-flex">
+            <section class="tabela__lista-jogos tabela__listinhas ">
+              <header>
+                <h2
+                  class="lista-jogos__header--titulo lista-jogos__header--titulo-listinha"
                 >
-                  <path
-                    d="M40.4 121.3c-.8.8-1.8 1.2-2.9 1.2s-2.1-.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8 0l53.9 53.9c1.6 1.6 1.6 4.2 0 5.8l-53.9 53.9z"
-                  ></path></svg></span
-              ><span class="lista-jogos__navegacao--rodada">6ª RODADA</span
-              ><span
-                class="lista-jogos__navegacao--setas lista-jogos__navegacao--seta-direita"
-                ><svg
-                  stroke="#ccc"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 129 129"
-                >
-                  <path
-                    d="M40.4 121.3c-.8.8-1.8 1.2-2.9 1.2s-2.1-.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8 0l53.9 53.9c1.6 1.6 1.6 4.2 0 5.8l-53.9 53.9z"
-                  ></path>
-                </svg>
-              </span>
-            </nav>
-            <ul class="lista-jogos">
-              <li class="lista-jogos__jogo">
-                <div
-                  class="jogo theme"
-                  itemscope=""
-                  itemtype="http://schema.org/SportsEvent"
-                >
-                  <meta itemprop="name" content="São Paulo x Talleres" /><meta
-                    itemprop="startDate"
-                    content="2024-05-29T21:30"
-                  /><meta itemprop="location" content="América do Sul" /><a
-                    class="jogo__transmissao--link"
-                    href="https://ge.globo.com/sp/futebol/libertadores/jogo/29-05-2024/sao-paulo-talleres.ghtml"
-                    ><div>
-                      <div class="jogo__informacoes">
-                        <span class="jogo__informacoes--local">Morumbis</span
-                        ><span class="jogo__informacoes--data">29/05</span
-                        ><span class="jogo__informacoes--data">Quarta</span
-                        ><span class="jogo__informacoes--hora">21:30</span>
-                      </div>
-                      <div class="placar">
-                        <div
-                          class="placar__equipes placar__equipes--mandante"
-                          itemprop="performer"
-                          itemscope=""
-                          itemtype="http://schema.org/SportsTeam"
-                        >
-                          <meta itemprop="name" content="São Paulo" /><meta
-                            itemprop="startDate"
-                            content="2024-05-29T21:30"
-                          /><meta
-                            itemprop="location"
-                            content="América do Sul"
-                          /><span class="equipes__sigla" title="São Paulo"
-                            >SAO</span
-                          ><span class="equipes__nome">São Paulo</span
-                          ><img
-                            class="equipes__escudo equipes__escudo--mandante"
-                            itemprop="image"
-                            src="https://s.sde.globo.com/media/organizations/2018/03/11/sao-paulo.svg"
-                            width="30"
-                            height="30"
-                            title="São Paulo"
-                          />
-                        </div>
-                        <div class="placar-box">
-                          <span
-                            class="placar-box__valor placar-box__valor--mandante"
-                            >2</span
-                          ><span
-                            class="placar-box__valor placar-box__penaltis placar-box__penaltis-mandante"
-                          ></span
-                          ><span class="placar-box__versus"
-                            ><svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 100 100"
-                              id="scoreboard-vs-icon"
-                              width="100%"
-                              height="100%"
-                            >
-                              <line
-                                x1="-3"
-                                x2="100"
-                                y1="1"
-                                y2="100"
-                                stroke="#555"
-                                stroke-width="5"
-                              ></line>
-                              <line
-                                x1="-3"
-                                x2="100"
-                                y1="100"
-                                y2="1"
-                                stroke="#555"
-                                stroke-width="5"
-                              ></line></svg></span
-                          ><span
-                            class="placar-box__valor placar-box__penaltis placar-box__penaltis-visitante"
-                          ></span
-                          ><span
-                            class="placar-box__valor placar-box__valor--visitante"
-                            >0</span
-                          >
-                        </div>
-                        <div
-                          class="placar__equipes placar__equipes--visitante"
-                          itemprop="performer"
-                          itemscope=""
-                          itemtype="http://schema.org/SportsTeam"
-                        >
-                          <meta itemprop="name" content="Talleres" /><meta
-                            itemprop="startDate"
-                            content="2024-05-29T21:30"
-                          /><meta
-                            itemprop="location"
-                            content="América do Sul"
-                          /><img
-                            class="equipes__escudo equipes__escudo--visitante"
-                            itemprop="image"
-                            src="https://s.sde.globo.com/media/organizations/2019/02/19/tallares-svg-13104.svg"
-                            width="30"
-                            height="30"
-                            title="Talleres"
-                          /><span class="equipes__sigla" title="Talleres"
-                            >TAL</span
-                          ><span class="equipes__nome">Talleres</span>
-                        </div>
-                      </div>
-                    </div>
-                    <span
-                      class="jogo__transmissao--broadcast"
-                      style="
-                        color: rgb(6, 170, 72);
-                        background-color: transparent;
-                      "
-                      >saiba como foi</span
-                    ></a
+                  JOGOS
+                </h2>
+              </header>
+              <nav class="lista-jogos__navegacao">
+                <span
+                  class="lista-jogos__navegacao--setas lista-jogos__navegacao--seta-esquerda lista-jogos__navegacao--setas-ativa"
+                  ><svg
+                    stroke="#06AA48"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 129 129"
                   >
-                </div>
-              </li>
-              <li class="lista-jogos__jogo">
-                <div
-                  class="jogo theme"
-                  itemscope=""
-                  itemtype="http://schema.org/SportsEvent"
-                >
-                  <meta
-                    itemprop="name"
-                    content="Barcelona de Guayaquil x Cobresal"
-                  /><meta
-                    itemprop="startDate"
-                    content="2024-05-29T21:30"
-                  /><meta itemprop="location" content="América do Sul" /><a
-                    class="jogo__transmissao--link"
-                    href="https://ge.globo.com/futebol/libertadores/jogo/29-05-2024/barcelona-de-guayaquil-cobresal.ghtml"
-                    ><div>
-                      <div class="jogo__informacoes">
-                        <span class="jogo__informacoes--local"
-                          >Monumental de Guayaquil</span
-                        ><span class="jogo__informacoes--data">29/05</span
-                        ><span class="jogo__informacoes--data">Quarta</span
-                        ><span class="jogo__informacoes--hora">21:30</span>
-                      </div>
-                      <div class="placar">
-                        <div
-                          class="placar__equipes placar__equipes--mandante"
-                          itemprop="performer"
-                          itemscope=""
-                          itemtype="http://schema.org/SportsTeam"
-                        >
-                          <meta
-                            itemprop="name"
-                            content="Barcelona de Guayaquil"
-                          /><meta
-                            itemprop="startDate"
-                            content="2024-05-29T21:30"
-                          /><meta
-                            itemprop="location"
-                            content="América do Sul"
-                          /><span
-                            class="equipes__sigla"
-                            title="Barcelona de Guayaquil"
-                            >BSC</span
-                          ><span class="equipes__nome"
-                            >Barcelona de Guayaquil</span
-                          ><img
-                            class="equipes__escudo equipes__escudo--mandante"
-                            itemprop="image"
-                            src="https://s.sde.globo.com/media/organizations/2023/03/22/barcelona_SC.svg"
-                            width="30"
-                            height="30"
-                            title="Barcelona de Guayaquil"
-                          />
-                        </div>
-                        <div class="placar-box">
-                          <span
-                            class="placar-box__valor placar-box__valor--mandante"
-                            >2</span
-                          ><span
-                            class="placar-box__valor placar-box__penaltis placar-box__penaltis-mandante"
-                          ></span
-                          ><span class="placar-box__versus"
-                            ><svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 100 100"
-                              id="scoreboard-vs-icon"
-                              width="100%"
-                              height="100%"
-                            >
-                              <line
-                                x1="-3"
-                                x2="100"
-                                y1="1"
-                                y2="100"
-                                stroke="#555"
-                                stroke-width="5"
-                              ></line>
-                              <line
-                                x1="-3"
-                                x2="100"
-                                y1="100"
-                                y2="1"
-                                stroke="#555"
-                                stroke-width="5"
-                              ></line></svg></span
-                          ><span
-                            class="placar-box__valor placar-box__penaltis placar-box__penaltis-visitante"
-                          ></span
-                          ><span
-                            class="placar-box__valor placar-box__valor--visitante"
-                            >1</span
-                          >
-                        </div>
-                        <div
-                          class="placar__equipes placar__equipes--visitante"
-                          itemprop="performer"
-                          itemscope=""
-                          itemtype="http://schema.org/SportsTeam"
-                        >
-                          <meta itemprop="name" content="Cobresal" /><meta
-                            itemprop="startDate"
-                            content="2024-05-29T21:30"
-                          /><meta
-                            itemprop="location"
-                            content="América do Sul"
-                          /><img
-                            class="equipes__escudo equipes__escudo--visitante"
-                            itemprop="image"
-                            src="https://s.sde.globo.com/media/organizations/2024/04/09/COBRESAL.svg"
-                            width="30"
-                            height="30"
-                            title="Cobresal"
-                          /><span class="equipes__sigla" title="Cobresal"
-                            >COB</span
-                          ><span class="equipes__nome">Cobresal</span>
-                        </div>
-                      </div>
-                    </div>
-                    <span
-                      class="jogo__transmissao--broadcast"
-                      style="
-                        color: rgb(6, 170, 72);
-                        background-color: transparent;
-                      "
-                      >saiba como foi</span
-                    ></a
+                    <path
+                      d="M40.4 121.3c-.8.8-1.8 1.2-2.9 1.2s-2.1-.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8 0l53.9 53.9c1.6 1.6 1.6 4.2 0 5.8l-53.9 53.9z"
+                    ></path></svg>
+                </span>
+                <span class="lista-jogos__navegacao--rodada">6ª RODADA</span>
+                <span
+                  class="lista-jogos__navegacao--setas lista-jogos__navegacao--seta-direita"
+                  ><svg
+                    stroke="#ccc"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 129 129"
                   >
-                </div>
-              </li>
-            </ul>
-          </section>
+                    <path
+                      d="M40.4 121.3c-.8.8-1.8 1.2-2.9 1.2s-2.1-.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8 0l53.9 53.9c1.6 1.6 1.6 4.2 0 5.8l-53.9 53.9z"
+                    ></path>
+                  </svg>
+                </span>
+              </nav>
+              <ul class="lista-jogos">
+                <li class="lista-jogos__jogo">
+                  <div
+                    class="jogo theme"
+                    itemscope=""
+                    itemtype="http://schema.org/SportsEvent"
+                  >
+                    <meta itemprop="name" content="São Paulo x Talleres" /><meta
+                      itemprop="startDate"
+                      content="2024-05-29T21:30"
+                    /><meta itemprop="location" content="América do Sul" /><a
+                      class="jogo__transmissao--link"
+                      href="https://ge.globo.com/sp/futebol/libertadores/jogo/29-05-2024/sao-paulo-talleres.ghtml"
+                      ><div>
+                        <div class="jogo__informacoes">
+                          <span class="jogo__informacoes--local">Morumbis</span
+                          ><span class="jogo__informacoes--data">29/05</span
+                          ><span class="jogo__informacoes--data">Quarta</span
+                          ><span class="jogo__informacoes--hora">21:30</span>
+                        </div>
+                        <div class="placar">
+                          <div
+                            class="placar__equipes placar__equipes--mandante"
+                            itemprop="performer"
+                            itemscope=""
+                            itemtype="http://schema.org/SportsTeam"
+                          >
+                            <meta itemprop="name" content="São Paulo" /><meta
+                              itemprop="startDate"
+                              content="2024-05-29T21:30"
+                            /><meta
+                              itemprop="location"
+                              content="América do Sul"
+                            /><span class="equipes__sigla" title="São Paulo"
+                              >SAO</span
+                            ><span class="equipes__nome">São Paulo</span
+                            ><img
+                              class="equipes__escudo equipes__escudo--mandante"
+                              itemprop="image"
+                              src="https://s.sde.globo.com/media/organizations/2018/03/11/sao-paulo.svg"
+                              width="30"
+                              height="30"
+                              title="São Paulo"
+                            />
+                          </div>
+                          <div class="placar-box">
+                            <span
+                              class="placar-box__valor placar-box__valor--mandante"
+                              >2</span
+                            ><span
+                              class="placar-box__valor placar-box__penaltis placar-box__penaltis-mandante"
+                            ></span
+                            ><span class="placar-box__versus"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 100 100"
+                                id="scoreboard-vs-icon"
+                                width="100%"
+                                height="100%"
+                              >
+                                <line
+                                  x1="-3"
+                                  x2="100"
+                                  y1="1"
+                                  y2="100"
+                                  stroke="#555"
+                                  stroke-width="5"
+                                ></line>
+                                <line
+                                  x1="-3"
+                                  x2="100"
+                                  y1="100"
+                                  y2="1"
+                                  stroke="#555"
+                                  stroke-width="5"
+                                ></line></svg></span
+                            ><span
+                              class="placar-box__valor placar-box__penaltis placar-box__penaltis-visitante"
+                            ></span
+                            ><span
+                              class="placar-box__valor placar-box__valor--visitante"
+                              >0</span
+                            >
+                          </div>
+                          <div
+                            class="placar__equipes placar__equipes--visitante"
+                            itemprop="performer"
+                            itemscope=""
+                            itemtype="http://schema.org/SportsTeam"
+                          >
+                            <meta itemprop="name" content="Talleres" /><meta
+                              itemprop="startDate"
+                              content="2024-05-29T21:30"
+                            /><meta
+                              itemprop="location"
+                              content="América do Sul"
+                            /><img
+                              class="equipes__escudo equipes__escudo--visitante"
+                              itemprop="image"
+                              src="https://s.sde.globo.com/media/organizations/2019/02/19/tallares-svg-13104.svg"
+                              width="30"
+                              height="30"
+                              title="Talleres"
+                            /><span class="equipes__sigla" title="Talleres"
+                              >TAL</span
+                            ><span class="equipes__nome">Talleres</span>
+                          </div>
+                        </div>
+                      </div>
+                      <span
+                        class="jogo__transmissao--broadcast"
+                        style="
+                          color: rgb(6, 170, 72);
+                          background-color: transparent;
+                        "
+                        >saiba como foi</span
+                      ></a
+                    >
+                  </div>
+                </li>
+                <li class="lista-jogos__jogo">
+                  <div
+                    class="jogo theme"
+                    itemscope=""
+                    itemtype="http://schema.org/SportsEvent"
+                  >
+                    <meta
+                      itemprop="name"
+                      content="Barcelona de Guayaquil x Cobresal"
+                    /><meta
+                      itemprop="startDate"
+                      content="2024-05-29T21:30"
+                    /><meta itemprop="location" content="América do Sul" /><a
+                      class="jogo__transmissao--link"
+                      href="https://ge.globo.com/futebol/libertadores/jogo/29-05-2024/barcelona-de-guayaquil-cobresal.ghtml"
+                      ><div>
+                        <div class="jogo__informacoes">
+                          <span class="jogo__informacoes--local"
+                            >Monumental de Guayaquil</span
+                          ><span class="jogo__informacoes--data">29/05</span
+                          ><span class="jogo__informacoes--data">Quarta</span
+                          ><span class="jogo__informacoes--hora">21:30</span>
+                        </div>
+                        <div class="placar">
+                          <div
+                            class="placar__equipes placar__equipes--mandante"
+                            itemprop="performer"
+                            itemscope=""
+                            itemtype="http://schema.org/SportsTeam"
+                          >
+                            <meta
+                              itemprop="name"
+                              content="Barcelona de Guayaquil"
+                            /><meta
+                              itemprop="startDate"
+                              content="2024-05-29T21:30"
+                            /><meta
+                              itemprop="location"
+                              content="América do Sul"
+                            /><span
+                              class="equipes__sigla"
+                              title="Barcelona de Guayaquil"
+                              >BSC</span
+                            ><span class="equipes__nome"
+                              >Barcelona de Guayaquil</span
+                            ><img
+                              class="equipes__escudo equipes__escudo--mandante"
+                              itemprop="image"
+                              src="https://s.sde.globo.com/media/organizations/2023/03/22/barcelona_SC.svg"
+                              width="30"
+                              height="30"
+                              title="Barcelona de Guayaquil"
+                            />
+                          </div>
+                          <div class="placar-box">
+                            <span
+                              class="placar-box__valor placar-box__valor--mandante"
+                              >2</span
+                            ><span
+                              class="placar-box__valor placar-box__penaltis placar-box__penaltis-mandante"
+                            ></span
+                            ><span class="placar-box__versus"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 100 100"
+                                id="scoreboard-vs-icon"
+                                width="100%"
+                                height="100%"
+                              >
+                                <line
+                                  x1="-3"
+                                  x2="100"
+                                  y1="1"
+                                  y2="100"
+                                  stroke="#555"
+                                  stroke-width="5"
+                                ></line>
+                                <line
+                                  x1="-3"
+                                  x2="100"
+                                  y1="100"
+                                  y2="1"
+                                  stroke="#555"
+                                  stroke-width="5"
+                                ></line></svg></span
+                            ><span
+                              class="placar-box__valor placar-box__penaltis placar-box__penaltis-visitante"
+                            ></span
+                            ><span
+                              class="placar-box__valor placar-box__valor--visitante"
+                              >1</span
+                            >
+                          </div>
+                          <div
+                            class="placar__equipes placar__equipes--visitante"
+                            itemprop="performer"
+                            itemscope=""
+                            itemtype="http://schema.org/SportsTeam"
+                          >
+                            <meta itemprop="name" content="Cobresal" /><meta
+                              itemprop="startDate"
+                              content="2024-05-29T21:30"
+                            /><meta
+                              itemprop="location"
+                              content="América do Sul"
+                            /><img
+                              class="equipes__escudo equipes__escudo--visitante"
+                              itemprop="image"
+                              src="https://s.sde.globo.com/media/organizations/2024/04/09/COBRESAL.svg"
+                              width="30"
+                              height="30"
+                              title="Cobresal"
+                            /><span class="equipes__sigla" title="Cobresal"
+                              >COB</span
+                            ><span class="equipes__nome">Cobresal</span>
+                          </div>
+                        </div>
+                      </div>
+                      <span
+                        class="jogo__transmissao--broadcast"
+                        style="
+                          color: rgb(6, 170, 72);
+                          background-color: transparent;
+                        "
+                        >saiba como foi</span
+                      ></a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </section>
+            <section class="tabela__lista-jogos tabela__listinhas ">
+              <header>
+                <h2
+                  class="lista-jogos__header--titulo lista-jogos__header--titulo-listinha"
+                >
+                  JOGOS
+                </h2>
+              </header>
+              <nav class="lista-jogos__navegacao">
+                <span
+                  class="lista-jogos__navegacao--setas lista-jogos__navegacao--seta-esquerda lista-jogos__navegacao--setas-ativa"
+                  ><svg
+                    stroke="#06AA48"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 129 129"
+                  >
+                    <path
+                      d="M40.4 121.3c-.8.8-1.8 1.2-2.9 1.2s-2.1-.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8 0l53.9 53.9c1.6 1.6 1.6 4.2 0 5.8l-53.9 53.9z"
+                    ></path></svg>
+                </span>
+                <span class="lista-jogos__navegacao--rodada">5ª RODADA</span>
+                <span
+                  class="lista-jogos__navegacao--setas lista-jogos__navegacao--seta-direita"
+                  ><svg
+                    stroke="#ccc"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 129 129"
+                  >
+                    <path
+                      d="M40.4 121.3c-.8.8-1.8 1.2-2.9 1.2s-2.1-.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8 0l53.9 53.9c1.6 1.6 1.6 4.2 0 5.8l-53.9 53.9z"
+                    ></path>
+                  </svg>
+                </span>
+              </nav>
+             
+            </section>
+            <section class="tabela__lista-jogos tabela__listinhas ">
+              <header>
+                <h2
+                  class="lista-jogos__header--titulo lista-jogos__header--titulo-listinha"
+                >
+                  JOGOS
+                </h2>
+              </header>
+              <nav class="lista-jogos__navegacao">
+                <span
+                  class="lista-jogos__navegacao--setas lista-jogos__navegacao--seta-esquerda lista-jogos__navegacao--setas-ativa"
+                  ><svg
+                    stroke="#06AA48"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 129 129"
+                  >
+                    <path
+                      d="M40.4 121.3c-.8.8-1.8 1.2-2.9 1.2s-2.1-.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8 0l53.9 53.9c1.6 1.6 1.6 4.2 0 5.8l-53.9 53.9z"
+                    ></path></svg>
+                </span>
+                <span class="lista-jogos__navegacao--rodada">4ª RODADA</span>
+                <span
+                  class="lista-jogos__navegacao--setas lista-jogos__navegacao--seta-direita"
+                  ><svg
+                    stroke="#ccc"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 129 129"
+                  >
+                    <path
+                      d="M40.4 121.3c-.8.8-1.8 1.2-2.9 1.2s-2.1-.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8 0l53.9 53.9c1.6 1.6 1.6 4.2 0 5.8l-53.9 53.9z"
+                    ></path>
+                  </svg>
+                </span>
+              </nav>
+            
+            </section>
+          </div>
         </article>
         <article
           class="tabela__futebol tabela__futebol--listinhas"
@@ -6082,6 +6165,14 @@
         <!-- ranking -->
       </section>
     </div>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick Slider JS -->
+    <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="slick.js"></script>
     <script src="script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

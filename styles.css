@@ -988,6 +988,24 @@ table {
   flex-basis: 30%;
 }
 
+.slick-next {
+  right: 0 !important;
+  top: 20px !important;
+}
+
+.slick-prev {
+  left: 0 !important;
+  top: 20px !important;
+}
+
+.carrossel-tabelinha {
+  flex-grow: 1;
+  width: 30%;
+  flex-basis: 30%;
+}
+
+
+
 @media (min-width: 1440px) {
   .lista-jogos .equipes__nome {
     display: block;
@@ -997,7 +1015,7 @@ table {
     line-height: 24px;
     width: 100%;
   }
-  
+
   .lista-jogos .equipes__sigla {
     display: none;
   }
